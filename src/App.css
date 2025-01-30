@@ -1,0 +1,55 @@
+/* App.css */
+
+/* Resetting body margin to remove default spacing and applying a consistent font */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the navigation bar */
+.navbar {
+  display: flex; /* Flexbox layout to align items horizontally */
+  justify-content: space-between; /* Evenly space out links within the navbar */
+  align-items: center; /* Center items vertically */
+  background-color: #333; /* Dark background color for the navbar */
+  padding: 1rem 2rem; /* Adding padding for spacing around the content */
+  position: fixed; /* Fixes the navbar at the top of the page */
+  top: 0; /* Ensures the navbar is at the very top */
+  left: 0; /* Aligns the navbar to the left edge */
+  width: 100%; /* Makes the navbar stretch across the entire width of the page */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual hierarchy */
+}
+
+/* Styling the unordered list inside the navbar */
+.nav-links {
+  display: flex; /* Align links horizontally */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styling individual list items */
+.nav-links li {
+  margin-right: 1.5rem; /* Spacing between each link */
+}
+
+/* Styling the anchor tags (links) */
+.nav-links li a {
+  color: white; /* White text for better contrast against the dark background */
+  text-decoration: none; /* Remove default underline styling */
+  font-size: 1rem; /* Adjust font size */
+  padding: 0.5rem 1rem; /* Add padding inside each link for a clickable area */
+  border-radius: 4px; /* Rounded corners for hover effect */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.nav-links li a:hover {
+  background-color: #575757; /* Slightly lighter gray background on hover */
+}
+
+/* Adding spacing for the content below the fixed navbar */
+body > div {
+  padding-top: 80px; /* Ensures content starts below the navbar */
+}
